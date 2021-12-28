@@ -1,0 +1,10 @@
+@import "./wikipedia-vector.css";
+
+@font-face {
+  font-family: "Linux Libertine";
+  src: url(/libertine.woff);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
