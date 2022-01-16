@@ -1,4 +1,5 @@
 import axios from "axios";
+import { nextUid } from "./uid";
 
 const api = axios.create({
   baseURL: "https://en.wikipedia.org/w/api.php",
@@ -45,6 +46,7 @@ export async function randomPage(): Promise<string> {
       grnnamespace: 0,
       grnfilterredir: "nonredirects",
       grnlimit: 10,
+      requestId: nextUid()
     },
   });
 
