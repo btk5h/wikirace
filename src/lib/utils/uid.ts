@@ -1,5 +1,5 @@
 let uid = 0;
 
 export function nextUid(): string {
-  return String(uid++);
+  return `${uid++}${new Date()}`;
 }
